@@ -1,10 +1,9 @@
 This repository contains Projectwork :arrow_down: undertaken for the partial fulfillment of Advanced Deep Learning Module ( SS2021 ) and ETCS Creditpoints @OpenCampus.sh.
 
-# Open-Detector [ Real-Time Object Detection using OpenCV, YOLO, and PyTorch ]
+# Open-Detector 
 
-**Objective :** 
+**Objective :**  Real-Time Object Detection using OpenCV, YOLO, and PyTorch [ #needsupdate ]
 
-****
 
 ## :beginner: Index
 
@@ -14,7 +13,6 @@ This repository contains Projectwork :arrow_down: undertaken for the partial ful
 
 3. References
 
-****
 
 ## :diamond_shape_with_a_dot_inside: 1. Dataset
 
