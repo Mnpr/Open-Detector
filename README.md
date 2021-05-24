@@ -14,6 +14,8 @@ This repository contains Projectwork :arrow_down: undertaken for the partial ful
 
 ## :diamond_shape_with_a_dot_inside: 1. Dataset
 
+- MSCOCO 2017 Dataset [[ Pretrained - Darknet ](https://github.com/AlexeyAB/darknet)]
+
 ## :computer: 2. Implementaition
 
 ![](./assets/yolov4.png)
@@ -28,10 +30,14 @@ This repository contains Projectwork :arrow_down: undertaken for the partial ful
 
 - [ ] Image Processing and Data Loaders
 
-- [ ] Implementation
-  
-  - [ ] YOLOv3
-  - [ ] YOLOv4
+- [ ] Implementation-OpenCV [CPU]
+    - [ ] YOLOv3 pre-trained inference on videos/webcam
+    - [ ] YOLOv4 pre-trained inference on videos/webcam
+
+- [ ] OpenCV with CUDA ( build and install)
+
+- [ ] Implementation PyTorch
+  - [ ] 
 
 ## :bookmark_tabs: 3. References
 
