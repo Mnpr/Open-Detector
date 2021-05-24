@@ -22,7 +22,7 @@ This repository contains Projectwork :arrow_down: undertaken for the partial ful
 
 **Status /Progress**
 
-- [ ] Exploration of Datasets
+- [x] Exploration of Datasets
 
 - [ ] Exploartion of Application Domain and Challenges
 
@@ -31,8 +31,9 @@ This repository contains Projectwork :arrow_down: undertaken for the partial ful
 - [ ] Image Processing and Data Loaders
 
 - [ ] Implementation-OpenCV [CPU]
-    - [ ] YOLOv3 pre-trained inference on videos/webcam
-    - [ ] YOLOv4 pre-trained inference on videos/webcam
+    - [x] YOLOv3 pre-trained inference on videos/webcam
+    - [x] YOLOv4 pre-trained inference on videos/webcam
+    - [ ] Add instruction
 
 - [ ] OpenCV with CUDA ( build and install)
 
