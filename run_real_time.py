@@ -1,9 +1,8 @@
 import cv2 as cv
 from utils import get_prediction
 
-
-# Read Labels
-with open('./dataset/labels/coco.names', "r", encoding="utf-8" ) as f:
+# Read Dataset Labels
+with open('./dataset/coco.names', "r", encoding="utf-8" ) as f:
     labels = f.read().strip().split("\n")
 
 
@@ -14,7 +13,7 @@ yolo_weights = "pretrained/yolov3.weights"
 # IO
 
 # Sample video
-input = 2
+input = "./io/sample.mp4"
 
 cuda = True
 show_display = True

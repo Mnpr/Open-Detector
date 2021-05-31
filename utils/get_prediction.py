@@ -4,16 +4,19 @@ import numpy as np
 import imutils
 from imutils.video import FPS
 
-# Get CV predcition
+# Get Prediction OpenCV
 def get_yolo_preds(net, input_vid_path="io/sample.mp4", output_vid_path="io/yolo_output.avi", confidence_threshold=0.5, overlapping_threshold=0.3, write_output=False, show_display=True, labels = None):
+    
     # Get layer names that output predictions from YOLO
     # List of colors to represent each class label with distinct color
-    np.random.seed(123)
+    np.random.seed(111)
     colors = np.random.randint(0, 255, size=(len(labels), 3), dtype="uint8")
     ln = net.getLayerNames()
     ln = [ln[i[0] - 1] for i in net.getUnconnectedOutLayers()]
+
     W = None
     H = None
+
     cap = cv2.VideoCapture(input_vid_path)
 
     if (cap.isOpened() == False):
@@ -37,16 +40,22 @@ def get_yolo_preds(net, input_vid_path="io/sample.mp4", output_vid_path="io/yolo
         # Construct blob of frames by standardization, resizing, and swapping Red and Blue channels (RBG to RGB)
         blob = cv2.dnn.blobFromImage(
             frame, 1 / 255.0, (416, 416), swapRB=True, crop=False)
+
         net.setInput(blob)
         layerOutputs = net.forward(ln)
+
         boxes = []
         confidences = []
         classIDs = []
+
         for output in layerOutputs:
+
             for detection in output:
+
                 scores = detection[5:]
                 classID = np.argmax(scores)
                 confidence = scores[classID]
+                
                 if confidence > confidence_threshold:
                     # Scale the bboxes back to the original image size
                     box = detection[0:4] * np.array([W, H, W, H])
@@ -84,9 +93,13 @@ def get_yolo_preds(net, input_vid_path="io/sample.mp4", output_vid_path="io/yolo
         fps.update()
         (success, frame) = cap.read()
     fps.stop()
+
     print("Elasped time: {:.2f}".format(fps.elapsed()))
     print("FPS: {:.2f}".format(fps.fps()))
+    
     cap.release()
+
     if write_output:
         out.release()
+
     cv2.destroyAllWindows()
