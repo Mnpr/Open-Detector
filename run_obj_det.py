@@ -27,10 +27,45 @@ np.random.seed(111)
 # Datasets
 # ----------------------------------------------------------------------------
 
-clothing = [ ]
+clothing = []
 
 with open('./dataset/clothing.json') as f:
     for line in f:
         clothing.append(json.loads(line))
 
-print(clothing[0])
+# print(clothing[0])
+
+# Labels
+# ----------------------------------------
+
+
+# Images with multiple annotation ?
+# for c in clothing:
+#     if len(c['annotation']) > 1:
+#         print(c)
+
+categories = []
+
+for c in clothing:
+    for a in c['annotation']:
+        categories.extend(a['label'])
+
+# sorted list of labels
+categories = list(set(categories))
+categories.sort()
+
+# Dataset Info
+# ----------------------------------------
+
+data_info = f"""
+
+Labels : {categories}
+
+"""
+print(data_info)
+
+# Train/ Test Split
+# ----------------------------------------------------------------------------
+
+train_set, dev_set = train_test_split(clothing, test_size = 0.1)
+print(len(train_set), len(dev_set))
