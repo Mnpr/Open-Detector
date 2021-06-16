@@ -1,6 +1,8 @@
 # Project Files
 **/io
 **/pretrained
+output.avi
+sample_yolo3.jpg
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
