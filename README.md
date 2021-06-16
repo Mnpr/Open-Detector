@@ -9,7 +9,8 @@ This repository contains Projectwork :arrow_down: undertaken for the partial ful
     - [x] YOLOv4 pre-trained inference on video/webcam/images
     - [x] Add instruction
 - [ ] Implementation-OpenCV ( cuda build )
-- [ ] Implementation PyTorch
+- [x] Implementation PyTorch
+- [ ] Modularization ( single app )
 - [ ] Model Evaluation
 
 ***
