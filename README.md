@@ -22,23 +22,13 @@ This repository contains Projectwork :arrow_down: undertaken for the partial ful
 
 **Status /Progress**
 
-- [x] Exploration of Datasets
-
-- [ ] Exploartion of Application Domain and Challenges
-
-- [ ] Exploration of Architectures
-
-- [ ] Image Processing and Data Loaders
-
-- [ ] Implementation-OpenCV [CPU]
-    - [x] YOLOv3 pre-trained inference on videos/webcam
-    - [x] YOLOv4 pre-trained inference on videos/webcam
-    - [ ] Add instruction
-
-- [ ] OpenCV with CUDA ( build and install)
-
+- [x] Implementation-OpenCV [CPU]
+    - [x] YOLOv3 pre-trained inference on video/webcam/images
+    - [x] YOLOv4 pre-trained inference on video/webcam/images
+    - [x] Add instruction
+- [ ] Implementation-OpenCV ( cuda build )
 - [ ] Implementation PyTorch
-  - [ ] 
+- [ ] Model Evaluation
 
 ## :bookmark_tabs: 3. References
 
