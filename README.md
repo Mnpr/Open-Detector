@@ -15,15 +15,16 @@ This repository contains Projectwork :arrow_down: undertaken for the partial ful
 
 ***
 **Instructions:**
-- Download and put yolov3 and v4 weights and configs inside `./pretrained/`
-  - `pretrained/`
+- Download and put yolov3 and v4 weights and configs inside `./Open-Detector/`
+  - `configs/`
     - `yolov3.cfg`
-    - `yolov3.weights`
     - `yolov4.cfg`
+  - `weights`
+    - `yolov3.weights`
     - `yolov4.weights`
 - Sample video under `./io/sample.mp4`
 - Install dependencies
-- Run `live_inference.py` | `static_inference`
+- Run `main.py`
 ***
 
 # Open-Detector
