@@ -12,8 +12,8 @@ CONFIG_PATH = 'pretrained/yolov4.cfg'
 WEIGHT_PATH = 'pretrained/yolov4.weights'
 
 # BBOX , Class Overlay Info
-FONT_SCALE = 3
-THICKNESS = 3
+FONT_SCALE = 2
+THICKNESS = 2
 
 # Labels name and color
 LABELS = open("../Open-Detector/dataset/coco.names").read().strip().split("\n")
