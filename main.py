@@ -20,8 +20,8 @@ THRESHOLD_SCORE = 0.5
 THRESHOLD_IOU = 0.4
 
 # Model Configuration
-CONFIG_PATH = 'configs/yolov3.cfg'
-WEIGHT_PATH = 'weights/yolov3.weights'
+CONFIG_PATH = 'configs/yolov4.cfg'
+WEIGHT_PATH = 'weights/yolov4.weights'
 
 # Miscellaneous
 CUDA = True
@@ -33,17 +33,14 @@ INPUT = 'io/sample.mp4'
 OUTPUT = 'io/yolo_output.avi'
 
 # Frameworks ( OpenCV | PyTorch )
-framework = 'open-cv'
+input_type = 'live'
 
 # later function + yolov3 inference [ todo ] 
-if framework == 'pytorch':
+if input_type == 'image':
 
     # Read Dataset Labels
     labels_file = 'dataset/coco.names'
     
-    # Device
-
-    # Inference
     # Model ( Pytorch )
     model = Darknet(CONFIG_PATH)
     model.load_weights(WEIGHT_PATH)
@@ -63,9 +60,7 @@ if framework == 'pytorch':
     plot_boxes(original_image, boxes, class_names, plot_labels=True)
 
 # later function / class
-elif framework == 'open-cv':
-
-    input = 2 #"./io/sample.mp4"   
+elif input_type == 'video' or input_type =='live':  
     
     with open('dataset/coco.names', "r", encoding="utf-8" ) as f:
         LABELS = f.read().strip().split("\n")
@@ -83,7 +78,7 @@ elif framework == 'open-cv':
         net.setPreferableBackend(cv.dnn.DNN_BACKEND_CUDA)
         net.setPreferableTarget(cv.dnn.DNN_TARGET_CUDA)
 
-    get_prediction.get_yolo_preds(
+    get_prediction.get_video_inference(
         net,
         INPUT,
         OUTPUT,
