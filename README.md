@@ -1,32 +1,5 @@
 This repository contains Projectwork :arrow_down: undertaken for the partial fulfillment of Advanced Deep Learning Module ( SS2021 ) and ETCS Creditpoints @OpenCampus.sh.
 
-***
-
-**Status /Progress**
-
-- [x] Implementation-OpenCV [CPU]
-    - [x] YOLOv3 pre-trained inference on video/webcam/images
-    - [x] YOLOv4 pre-trained inference on video/webcam/images
-    - [x] Add instruction
-- [ ] Implementation-OpenCV ( cuda build )
-- [x] Implementation PyTorch
-- [ ] Modularization ( single app )
-- [ ] Model Evaluation
-
-***
-**Instructions:**
-- Download and put yolov3 and v4 weights and configs inside `./Open-Detector/`
-  - `configs/`
-    - `yolov3.cfg`
-    - `yolov4.cfg`
-  - `weights`
-    - `yolov3.weights`
-    - `yolov4.weights`
-- Sample video under `./io/sample.mp4`
-- Install dependencies
-- Run `main.py`
-***
-
 # Open-Detector
 
 **Objective :**  Real-Time Object Detection using OpenCV, YOLO, and PyTorch [ #needsupdate ]
@@ -45,8 +18,19 @@ This repository contains Projectwork :arrow_down: undertaken for the partial ful
 
 ## :computer: 2. Implementaition
 
-![](./assets/yolov4.png)
+1. Image Inference [ PyTorch ]
+2. Video and Livecam Inference [ OpenCV-CPU ]
 
+**Status /Progress**
+
+- [x] Implementation-OpenCV [CPU]
+    - [x] YOLOv3 pre-trained inference on video/webcam
+    - [x] YOLOv4 pre-trained inference on video/webcam
+- [ ] Implementation-OpenCV [CUDA]
+- [x] Implementation PyTorch
+- [x] Modularization ( single app )
+- [ ] Model Evaluation
+- [ ] Presentation
 
 ## :bookmark_tabs: 3. References
 
@@ -54,3 +38,16 @@ This repository contains Projectwork :arrow_down: undertaken for the partial ful
 - [2. ] [[ AlexeyABDarknet Weights and Configs]](https://github.com/AlexeyAB/darknet)
 
 
+***
+**Reproduction Instructions:**
+- Download and put yolov3 and v4 weights and configs inside `./Open-Detector/`
+  - `configs/`
+    - `yolov3.cfg`
+    - `yolov4.cfg`
+  - `weights`
+    - `yolov3.weights`
+    - `yolov4.weights`
+- Sample video under `./io/sample.jpg` | `./io/sample.mp4` | [0,1,2, etc. for `live_cam`]
+- Install dependencies run `requirements.txt`
+- Run `main.py`
+***
