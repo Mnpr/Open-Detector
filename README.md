@@ -18,9 +18,6 @@ This repository contains Projectwork :arrow_down: undertaken for the partial ful
 
 ## :computer: 2. Implementaition
 
-1. Image Inference [ PyTorch ]
-2. Video and Livecam Inference [ OpenCV-CPU ]
-
 **Status /Progress**
 
 - [x] Implementation-OpenCV [CPU]
