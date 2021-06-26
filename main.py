@@ -29,7 +29,7 @@ WRITE_OUTPUT = False
 SHOW_DISPLAY = True
 
 # Input / Output 
-INPUT = 'io/sample.mp4'
+INPUT = 'io/sample.jpg'
 OUTPUT = 'io/yolo_output.avi'
 
 # Frameworks ( OpenCV | PyTorch )
@@ -48,7 +48,7 @@ if input_type == 'image':
 
     class_names = load_class_names(labels_file)
 
-    original_image = cv.imread("io/sample.jpg")
+    original_image = cv.imread(INPUT)
     original_image = cv.cvtColor(original_image, cv.COLOR_BGR2RGB)
 
     image = cv.resize(original_image, (model.width, model.height))
