@@ -135,4 +135,4 @@ def get_video_inference(net, input_vid_path="io/sample.mp4", output_vid_path="io
     if write_output:
         out.release()
 
-    cv2.destroyAllWindows()
+    cv.destroyAllWindows()
