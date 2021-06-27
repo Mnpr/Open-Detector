@@ -23,10 +23,8 @@ This repository contains Projectwork :arrow_down: undertaken for the partial ful
 - [x] Implementation-OpenCV [CPU]
     - [x] YOLOv3 pre-trained inference on video/webcam
     - [x] YOLOv4 pre-trained inference on video/webcam
-- [ ] Implementation-OpenCV [CUDA]
 - [x] Implementation PyTorch
 - [x] Modularization ( single app )
-- [ ] Model Evaluation
 - [ ] Presentation
 
 ## :bookmark_tabs: 3. References
@@ -45,6 +43,6 @@ This repository contains Projectwork :arrow_down: undertaken for the partial ful
     - `yolov3.weights`
     - `yolov4.weights`
 - Sample video under `./io/sample.jpg` | `./io/sample.mp4` | [0,1,2, etc. for `live_cam`]
-- Install dependencies run `requirements.txt`
-- Run `main.py`
+- Install dependencies `pip install -r requirements.txt`
+- Run `python main.py` providing `input_type` = 'image' | 'video' | 'live'
 ***
