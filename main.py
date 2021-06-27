@@ -20,20 +20,20 @@ THRESHOLD_SCORE = 0.5
 THRESHOLD_IOU = 0.4
 
 # Model Configuration
-CONFIG_PATH = 'configs/yolov4.cfg'
-WEIGHT_PATH = 'weights/yolov4.weights'
+CONFIG_PATH = 'configs/yolov3.cfg'
+WEIGHT_PATH = 'weights/yolov3.weights'
 
 # Miscellaneous
-CUDA = True
+CUDA = False
 WRITE_OUTPUT = False
 SHOW_DISPLAY = True
 
 # Input / Output 
-INPUT = 'io/sample.jpg'
+INPUT = 'io/sample.jpg' 
 OUTPUT = 'io/yolo_output.avi'
 
 # Frameworks ( OpenCV | PyTorch )
-input_type = 'live'
+input_type = 'image'
 
 # later function + yolov3 inference [ todo ] 
 if input_type == 'image':
@@ -91,13 +91,3 @@ elif input_type == 'video' or input_type =='live':
 
 else:
     print('please provide a valid framework_name ')
-
-
-
-# Conditional Inference [ 'img', 'video', 'livecam']
-
-# Computational Device 
-
-# Argument Parser
-
-# Execute main
