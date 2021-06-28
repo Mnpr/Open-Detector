@@ -29,11 +29,11 @@ WRITE_OUTPUT = False
 SHOW_DISPLAY = True
 
 # Input / Output 
-INPUT = 'io/sample.jpg' 
+INPUT = 'io/sample3.mp4' # 'io/sample.mp4' # 2 #(external-livecam))
 OUTPUT = 'io/yolo_output.avi'
 
-# Frameworks ( OpenCV | PyTorch )
-input_type = 'image'
+# Frameworks ( OpenCV(v3/v4) | PyTorch(v3) )
+input_type = 'video' # | 'video' | 'live' [ 0 or 1 or 2]
 
 # later function + yolov3 inference [ todo ] 
 if input_type == 'image':
