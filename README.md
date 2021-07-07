@@ -2,7 +2,7 @@ This repository contains Projectwork :arrow_down: undertaken for the partial ful
 
 # Open-Detector
 
-**Objective :**  Real-Time Object Detection using OpenCV, YOLO, and PyTorch [ #needsupdate ]
+**Objective :** Object Detection with YOLO[v3/v4], using OpenCV and PyTorch
 
 ## :beginner: Index
 
@@ -14,23 +14,23 @@ This repository contains Projectwork :arrow_down: undertaken for the partial ful
 
 ## :diamond_shape_with_a_dot_inside: 1. Dataset
 
-- MSCOCO 2017 Dataset [[ Pretrained - Darknet ](https://github.com/AlexeyAB/darknet)]
+- MSCOCO 2017 Dataset [[ Pretrained YOLO with Darknet Backend ](https://github.com/AlexeyAB/darknet)]
 
 ## :computer: 2. Implementaition
 
 **Status /Progress**
 
-- [x] Implementation-OpenCV [CPU]
+- [x] Implementation-OpenCV ( Video/Cam ) [CPU]
     - [x] YOLOv3 pre-trained inference on video/webcam
     - [x] YOLOv4 pre-trained inference on video/webcam
-- [x] Implementation PyTorch
-- [x] Modularization ( single app )
-- [ ] Presentation
+- [x] Implementation PyTorch ( images ) [GPU]
+- [x] Modularization
+- [x] Final Presentation
 
 ## :bookmark_tabs: 3. References
 
 - [1. ] YOLO Versions : [[Scaled-v4 Feb 2021](https://arxiv.org/pdf/2011.08036.pdf)], [[V4 Apr 2020](https://arxiv.org/pdf/2004.10934v1.pdf)], [[V3 Apr 2018](https://arxiv.org/pdf/1804.02767v1.pdf)], [[V2 Dec 2016](https://arxiv.org/pdf/1612.08242v1.pdf)], & [[V1 May 2016](https://arxiv.org/pdf/1506.02640v5.pdf)]
-- [2. ] [[ AlexeyABDarknet Weights and Configs]](https://github.com/AlexeyAB/darknet)
+- [2. ] AlexeyAB/Darknet [[ Weights and Configs]](https://github.com/AlexeyAB/darknet)
 
 
 ***
