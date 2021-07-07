@@ -20,8 +20,8 @@ THRESHOLD_SCORE = 0.5
 THRESHOLD_IOU = 0.4
 
 # Model Configuration
-CONFIG_PATH = 'configs/yolov3.cfg'
-WEIGHT_PATH = 'weights/yolov3.weights'
+CONFIG_PATH = 'configs/yolov4.cfg'
+WEIGHT_PATH = 'weights/yolov4.weights'
 
 # Miscellaneous
 CUDA = False
