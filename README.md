@@ -4,6 +4,8 @@ This repository contains Projectwork :arrow_down: undertaken for the partial ful
 
 **Objective :** Object Detection with YOLO[v3/v4], using OpenCV and PyTorch
 
+![](./assets/img_inference.png)
+
 ## :beginner: Index
 
 1. Datasets
